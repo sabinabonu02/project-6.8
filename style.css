@@ -4,17 +4,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
 
 .page{
     /*
     display: flex;
     flex-direction: column;
     */
-    font-family: TTlakes;
-    src:url(/fonts/TTLakes-Bold.ttf) format('truetype');
     background:#f8f8f8;
     color:rgb(0, 0, 0);
+    font-family: 'TT Lakes', sans-serif;
 }
 
 .header{
@@ -44,8 +50,12 @@
 }
 
 .services_heading{
-    display: flex;
-    gap: 16px;
+    display:flex;
+    align-items:center;
+}
+
+.services_actions{
+    margin-left:auto;
 }
 
 .services_accent{
@@ -58,6 +68,7 @@
 .services_title{
     display: flex;
     justify-content: flex-start;
+    font-family: 'TT Lakes', sans-serif;
     font-size: 28px;
     font-weight: 700;
 }
@@ -67,33 +78,30 @@
     flex-direction:row;
     justify-content: flex-end;
     gap: 16px;
-    margin-top: auto;
 }
 
 .slideMenu{
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin: 30px 0;
-gap: 16px;
+    display:flex;
+    gap:16px;
+    overflow-x:auto;
+    white-space:nowrap;
 }
 
-span.slideMenu{
+span.slideMenu_item{
     display: block;
     padding: 12px 16px;
     border-radius: 8px;
     color: black;
     font-weight: 500;
-    block-size: fit-content;
 }
 
-span.slideMenu:hover{
-border:2px solid #b8ffec;
-border-radius:6px;
-background:#fff;
+.slideMenu_item:hover{
+    border:2px solid #b8ffec;
+    border-radius:6px;
+    background:#fff;
 }
 
-.services__content{
+.services_content{
 display:flex;
 gap:36px;
 }
@@ -114,11 +122,11 @@ font-weight:700;
 cursor:pointer;
 }
 
-.services__image{
+.services_image{
 flex:1;
 }
 
-.services__image img{
+.services_image img{
 width:100%;
 display:block;
 border-radius:8px;
@@ -126,17 +134,25 @@ border-radius:8px;
 
 @media (max-width:767px){
 
-.header__button--tablet,
-.header__right,
-.header__divider--tablet,
-.services__actions{
+.header_button--tablet,
+.header_right,
+.header_divider--tablet,
+.services_actions{
 display:none;
 }
+}
+
 
 @media (min-width:1120px){
 
 .header{
   background:#f8f8f8;
 }
-
+.services_content{
+    flex-direction:column;
+}
+.services_text{
+    .services_text--expanded{
+        display: block;
+    }
 }
