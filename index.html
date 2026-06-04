@@ -6,28 +6,97 @@
     <title>Project 6.8</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <div class="actions">
-          <div class="menu">
-            <img src="images/menu.svg" alt="Menu" />
-          </div>
-          <div class="logo">
-            <img src="images/logo.svg" alt="Logo" />
-          </div>
-          <div class="divider"></div>
-          <div class="repair">
-            <img src="images/repair.svg" alt="Repair" />
-          </div>
-          <div class="search">
-            <img src="images/search.svg" alt="Search" />
-          </div>
+  <body class="page">
+    <header class="header">
+      <div class="header_left">
+        <!--menu icon and logo+ two dividers-->
+        <div class="header_button">
+          <img src="images/menu.svg" alt="Menu Icon" />
         </div>
-      </nav>
+        <div class="header_divider header_divider--tablet"></div>
+        <div class="header_logo">
+          <img src="images/logo.svg" alt="Logo" />
+        </div>
+        <div class="header_divider"></div>
+      </div>
+      <div class="header_right">
+        <div class="header_button header_button--tablet">
+          <img src="images/call.svg" alt="Call Icon" />
+        </div>
+        <div class="header_button header_button--tablet">
+          <img src="images/chat.svg" alt="Chat Icon" />
+        </div>
+        <div class="header_button header_button--tablet">
+          <img src="images/profile.svg" alt="Profile Icon" />
+        </div>
+        <div class="header_divider header_divider--tablet"></div>
+        <div class="header_button">
+          <img src="images/repair.svg" alt="Repair Icon" />
+        </div>
+        <div class="header_button">
+          <img src="images/search.svg" alt="Search Icon" />
+        </div>
+      </div>
+      <div class="header_shadow"></div>
     </header>
-    <main>
-      <h1>Услуги и сервисы</h1>
+    <main class="services">
+      <div class="services_heading">
+        <div class="services_accent"></div>
+        <h1 class="services_title">Услуги и сервисы</h1>
+        <div class="services_actions services_actions--desktop">
+          <span class="services_action-text">Оставить заявку</span>
+          <button class="header_button header_button--desktop">
+            <img src="/images/repair.svg" alt="Repair Icon" />
+          </button>
+          <span class="services_action-text">Статус ремонта</span>
+          <button class="header_button header_button--desktop">
+            <img src="/images/search.svg" alt="Search Icon" />
+          </button>
+        </div>
+      </div>
+      <nav class="slideMenu">
+        <!--vopros k mentoru -->
+        <span class="slideMenu slideMenu--active">
+          Ремонтируемые бренды
+        </span>
+        <span class="slideMenu"> 
+          Ремонтируемые устройства
+        </span>
+        <span class="slideMenu"> 
+          Цены на услуги 
+        </span>
+        <span class="slideMenu"> 
+          Адреса сервисных центров 
+        </span>
+        <span class="slideMenu"> 
+          Специальные цены 
+        </span>
+        <span class="slideMenu"> 
+          Отзывы 
+        </span>
+      </nav>
+      <section class="services_content">
+        <!--vopros k mentoru-->
+        <div class="services_content services_content-text">
+          <p>
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+            <br /><br />
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p>
+          <span class="services_content-readMore">
+            <img src="images/readMore.svg" alt="readMore" /> 
+            Читать далее
+          </span>
+        </div>
+        <div class="services_image">
+          <img src="/images/servicesImage.svg" alt="Services Image" />
+        </div>
+      </section>
     </main>
   </body>
 </html>
