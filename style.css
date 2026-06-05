@@ -14,10 +14,8 @@
 }
 
 .page{
-    /*
-    display: flex;
-    flex-direction: column;
-    */
+    /*display:grid;*/
+    
     background:#f8f8f8;
     color:rgb(0, 0, 0);
     font-family: 'TT Lakes', sans-serif;
